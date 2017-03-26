@@ -22,4 +22,6 @@ setxkbmap -option caps:escape
 vmware-user-suid-wrapper
 feh --bg-center /home/rotaru_i/BackGround/bg1.jpg
 
+~/.config/bspwm/floating9.sh &
+
 polybar example&
