@@ -1,0 +1,1 @@
+/home/mortimr/.config/fisherman/dangerous/fish_right_prompt.fish

@@ -1,0 +1,1 @@
+/home/mortimr/.config/fisherman/get/functions/get.fish

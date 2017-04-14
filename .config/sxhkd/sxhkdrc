@@ -4,7 +4,9 @@
 
 # terminal emulator
 alt + Return
-	urxvt
+	terminator
+alt + g
+	gitkraken
 
 # program launcher
 alt + @space
@@ -61,10 +63,6 @@ alt + {_,shift + }{h,j,k,l}
 # focus the node for the given path jump
 alt + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
-
-# focus the next/previous node in the current desktop
-alt + {_,shift + }c
-	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
 alt + bracket{left,right}

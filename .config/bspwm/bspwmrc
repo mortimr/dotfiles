@@ -4,24 +4,24 @@ sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX
 
-bspc config border_width         0
-bspc config window_gap          0
+bspc config window_gap          20
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc config -d focused border_width 3
-bspc config focused_border_color "#4286f4"
-
+#bspc config focused_border_color "#4286f4"
+##bspc config border_width 3
+bspc config border_width 0
+bspc config honor_size_hints true
 xrandr --output Virtual1 --mode 2560x1600
 xrandr --dpi 155
 xset r rate 200 30
 
 ~/.config/bspwm/f9.sh &
-
+compton -r 12 -c -f -I 0.10 -O 0.05 -z --shadow-exclude "class_g = 'polybar'" &
 setxkbmap -option caps:escape
 vmware-user-suid-wrapper
-feh --bg-center /home/rotaru_i/BackGround/bg1.jpg
+feh --bg-center /home/mortimr/BackGround/bg1.jpg
 
-polybar example&
+polybar top&
