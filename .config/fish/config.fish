@@ -5,3 +5,6 @@ if status --is-login
 end
 
 set -gx TERM xterm-256color
+set -gx GOROOT /usr/local/go
+set -gx GOPATH /golang
+set -gx PATH $PATH $GOROOT/bin/ $GOPATH/bin
