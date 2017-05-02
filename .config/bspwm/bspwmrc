@@ -19,7 +19,6 @@ xrandr --dpi 155
 xset r rate 200 30
 
 ~/.config/bspwm/f9.sh &
-compton -r 12 -c -f -I 0.10 -O 0.05 -z --shadow-exclude "class_g = 'polybar'" &
 setxkbmap -option caps:escape
 vmware-user-suid-wrapper
 feh --bg-center /home/mortimr/BackGround/bg1.jpg

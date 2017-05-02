@@ -11,8 +11,8 @@
 transparent = #00000000
 foreground = #ffebdbb2
 foreground-alt = #ffebdbb2
-background-alt = #ff2f343f
-background = #002f343f
+background-alt = #00000000
+background = #00000000
 black = #7c6f64
 dgrey = #928374
 dred = #cc241d
@@ -31,8 +31,9 @@ dcyan = #689d6a
 cyan = #8ec07c
 lgrey = #a89984
 white = #ebdbb2
+mainBlue = #188AE2
 
-tblack = #852f343f
+tblack = #00000000
 tred = #80fb4934
 tgreen = #80b8bb26
 tyellow = #80fabd2f
@@ -44,7 +45,7 @@ tgrey = #80a89984
 
 
 [global/wm]
-margin-top = 5
+margin-top = 0
 margin-bottom = 5
 
 [bar/top]
@@ -61,9 +62,7 @@ foreground = ${colors.foreground}
 font-0 = Roboto:size=17
 font-1 = Inconsolata for Powerline\-dz:size=15;0
 
-modules-left = bspwm repoInfo
-modules-center = xwindow 
-modules-right = memory battery date
+modules-center = bspwm
 
 tray-position = right
 tray-padding = 2
@@ -83,7 +82,7 @@ type = internal/bspwm
 
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused-underline= ${colors.mainBlue}
 label-focused-padding = 2
 
 label-occupied = %index%
