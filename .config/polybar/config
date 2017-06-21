@@ -40,8 +40,8 @@ tyellow = #80fabd2f
 tblue = #8083a598
 tmagenta = #80d3869b
 tcyan = #808ec07c
-twhite = #80ebdbb2
-tgrey = #80a89984
+twhite = #ffffffff
+tgrey = #33333333
 
 
 [global/wm]
@@ -82,10 +82,12 @@ type = internal/bspwm
 
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
+label-focused-foreground = ${colors.twhite}
 label-focused-underline= ${colors.mainBlue}
 label-focused-padding = 2
 
 label-occupied = %index%
+label-occupied-foreground = ${colors.mainBlue}
 label-occupied-padding = 2
 
 label-urgent = %index%!
@@ -93,7 +95,7 @@ label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 label-empty = %index%
-label-empty-foreground = ${colors.foreground-alt}
+label-empty-foreground = ${colors.tgrey}
 label-empty-padding = 2
 
 
